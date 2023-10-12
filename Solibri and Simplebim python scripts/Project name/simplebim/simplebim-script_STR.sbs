@@ -1,0 +1,17 @@
+#IFC to be modified
+Import=%MODEL_FILE%
+
+#run tools
+Run=Assemblies: Simplify
+
+#run templates
+Apply=%SCRIPT_PATH%\Simplebim_template_2-STR.xlsx
+
+#export new IFC
+Export=%MODEL_PATH%\%MODEL_NAME%.%MODEL_EXT%
+
+#save simpleBIM file
+#Save=%MODEL_PATH%\%MODEL_FILE%.cube
+
+#clean up
+Close=%MODEL_PATH%\str_fail.log/p>

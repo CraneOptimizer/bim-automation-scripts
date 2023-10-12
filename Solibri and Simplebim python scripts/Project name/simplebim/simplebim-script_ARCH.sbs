@@ -1,0 +1,14 @@
+#IFC to be modified
+Import=%MODEL_FILE%
+
+#run templates
+Apply=%SCRIPT_PATH%\Simplebim_template_1-ARCH.xlsx
+
+#export new IFC
+Export=%MODEL_PATH%\%MODEL_NAME%.%MODEL_EXT%
+
+#save simpleBIM file
+#Save=%MODEL_PATH%\%MODEL_FILE%.cube
+
+#clean up
+Close=%MODEL_PATH%\test1_fail.log/p>
